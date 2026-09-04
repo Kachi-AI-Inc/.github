@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 270" width="640" height="270" role="img" aria-label="kachi.ai — make LLMs read, understand and cite your business">
+  <style>
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes pulse { 0%,100% { r: 7; opacity: 1; } 50% { r: 9; opacity: .6; } }
+    @keyframes fillCyc { 0%,10%,45%,100% { fill: #EDE5DA; } 18%,35% { fill: #A47864; } }
+    @keyframes labCyc  { 0%,10%,45%,100% { fill: #1F1812; } 18%,35% { fill: #FBF8F3; } }
+    .wm  { font-size: 62px; font-weight: 500; letter-spacing: -3px; opacity: 0; animation: rise .6s cubic-bezier(.2,.7,.3,1) .1s forwards; }
+    .dot { fill: #E8C97A; opacity: 0; transform-box: fill-box; transform-origin: center; animation: rise .4s ease-out .5s forwards, pulse 2.6s ease-in-out 1.2s infinite; }
+    .sub { fill: #6B5A4D; font-size: 15px; opacity: 0; animation: rise .6s ease-out .55s forwards; }
+    .conn { stroke: #B09382; stroke-width: 2; stroke-dasharray: 60; stroke-dashoffset: 60; }
+    .chip { opacity: 0; animation: rise .45s ease-out forwards, fillCyc 6s ease-in-out infinite; }
+    .lab  { font-size: 15px; font-weight: 600; opacity: 0; animation: rise .45s ease-out forwards, labCyc 6s ease-in-out infinite; }
+    .a { animation-delay: .8s,  2.0s; }
+    .b { animation-delay: 1.3s, 3.5s; }
+    .c { animation-delay: 1.8s, 5.0s; }
+    .c1 { animation: draw .5s ease-out 1.05s forwards; }
+    .c2 { animation: draw .5s ease-out 1.55s forwards; }
+  </style>
+
+  <text class="wm" x="356" y="82" text-anchor="end" fill="#1F1812">kachi</text>
+  <circle class="dot" cx="369" cy="62" r="7" />
+  <text class="wm" x="382" y="82" text-anchor="start" fill="#A47864">ai</text>
+  <text class="sub" x="320" y="122" text-anchor="middle">LLMs learn about your business from somewhere. We make sure it's from you.</text>
+
+  <g transform="translate(0,178)">
+    <rect class="chip a" x="66"  y="0" width="132" height="46" rx="10" />
+    <text class="lab a"  x="132" y="29" text-anchor="middle">Read</text>
+    <line class="conn c1" x1="202" y1="23" x2="256" y2="23" />
+    <rect class="chip b" x="260" y="0" width="132" height="46" rx="10" />
+    <text class="lab b"  x="326" y="29" text-anchor="middle">Understand</text>
+    <line class="conn c2" x1="396" y1="23" x2="450" y2="23" />
+    <rect class="chip c" x="454" y="0" width="120" height="46" rx="10" />
+    <text class="lab c"  x="514" y="29" text-anchor="middle">Cite</text>
+  </g>
+</svg>

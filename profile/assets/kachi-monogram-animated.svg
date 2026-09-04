@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Kachi monogram">
+  <style>
+    @keyframes in { 0% { opacity: 0; transform: scale(.82); } 100% { opacity: 1; transform: scale(1); } }
+    @keyframes k { 0% { opacity: 0; transform: translateY(10px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse { 0%,100% { r: 7; opacity: 1; } 50% { r: 9; opacity: .7; } }
+    @keyframes kw { 0% { opacity: 0; transform: rotate(-14deg) scale(1.4); } 100% { opacity: .55; transform: rotate(0) scale(1); } }
+    .tile { transform-box: fill-box; transform-origin: center; opacity: 0; animation: in .6s cubic-bezier(.2,.8,.2,1) forwards; }
+    .k { fill: #F5EFE8; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 118px; font-weight: 600; letter-spacing: -4px; opacity: 0; animation: k .5s ease-out .35s forwards; }
+    .dot { fill: #E8C97A; transform-box: fill-box; transform-origin: center; opacity: 0; animation: k .35s ease-out .6s forwards, pulse 2.6s ease-in-out 1.4s infinite; }
+    .kw { fill: #F5EFE8; font-family: 'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho','Songti SC',serif; font-size: 26px; font-weight: 700; transform-box: fill-box; transform-origin: center; opacity: 0; animation: kw .8s cubic-bezier(.2,.8,.2,1) .7s forwards; }
+  </style>
+  <rect class="tile" x="2" y="2" width="196" height="196" rx="44" fill="#436374" />
+  <text class="k" x="100" y="134" text-anchor="middle">k</text>
+  <circle class="dot" cx="148" cy="128" r="7" />
+  <text class="kw" x="170" y="44" text-anchor="middle">勝</text>
+</svg>
